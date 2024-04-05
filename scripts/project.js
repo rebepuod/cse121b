@@ -3,6 +3,7 @@ const bibleId = "de4e12af7f28f599-02";
 
 const section = document.getElementById("all");
 
+
 async function getData(link) {
     const response = await fetch(link, {
         method: "GET",
@@ -29,7 +30,7 @@ async function displayBooks() {
     
     
 
-    section.addEventListener("click",(e) => {
+    document.querySelector("a").addEventListener("click",(e) => {
         const bookIds = e.target.id;
         let chapters = `https://api.scripture.api.bible/v1/bibles/${bibleId}/books/${bookIds}/chapters`;
         reset();
