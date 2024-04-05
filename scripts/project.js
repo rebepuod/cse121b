@@ -30,7 +30,7 @@ async function displayBooks() {
     
     
 
-    document.querySelector("a").addEventListener("click",(e) => {
+    section.addEventListener("click",(e) => {
         const bookIds = e.target.id;
         let chapters = `https://api.scripture.api.bible/v1/bibles/${bibleId}/books/${bookIds}/chapters`;
         reset();
@@ -72,5 +72,12 @@ function reset() {
     section.innerHTML = "";
 }
 
+function goBack(){
+    document.querySelector("#home").addEventListener("click", () =>{ displayBooks()
+    })
+}
+
 
 displayBooks();
+
+goBack();

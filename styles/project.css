@@ -22,12 +22,13 @@ section a {
     background-color: rgb(181, 61, 141);
     color:antiquewhite;
     text-align: center;
+    font-size: large;
 }
 
 section {
     display: grid;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 h1 {
@@ -35,4 +36,15 @@ h1 {
     text-align: center;
     background-color: rgb(181, 61, 141);
     color:  antiquewhite ;
+}
+
+#home {
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    background-color: rgb(181, 61, 141);;
+    color:antiquewhite;
+    border: solid rgb(143, 37, 143) 2px;
+    font-size: medium;
+    font-weight: bold;
 }
