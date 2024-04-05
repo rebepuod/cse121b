@@ -1,14 +1,38 @@
 * {
-    margin: 0;
+     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: beige;
 }
 
 
 #all span {
     display: grid;
+
+    margin-top: 2px;
+    text-align: flex-start;
+}
+
+section a {
+    border: solid rgb(137, 14, 137) 2px;
+    background-color: rgb(181, 61, 141);
+    color:antiquewhite;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+h1 {
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(181, 61, 141);
+    color:  antiquewhite ;
 }
